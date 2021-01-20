@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">URMusic</string>
+    <string name="play_list">Play List</string>
+    <string name="now_playing">NOW PLAYING</string>
+    <string name="now_play_image">now_play_image</string>
+    <string name="buy_this_song">BUY THIS SONG</string>
+</resources>
