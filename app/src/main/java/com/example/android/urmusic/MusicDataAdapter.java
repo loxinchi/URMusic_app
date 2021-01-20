@@ -48,14 +48,14 @@ public class MusicDataAdapter extends ArrayAdapter<MusicData> {
 
         MusicData currentMusicData = getItem(position);
 
-        TextView nameTextView = (TextView) listItemView.findViewById(R.id.song_title);
-        nameTextView.setText(currentMusicData.getSongName());
+        TextView songTitleTextView = (TextView) listItemView.findViewById(R.id.song_title);
+        songTitleTextView.setText(currentMusicData.getSongName());
 
-        TextView numberTextView = (TextView) listItemView.findViewById(R.id.artist_name);
-        numberTextView.setText(currentMusicData.getArtistName());
+        TextView artistTextView = (TextView) listItemView.findViewById(R.id.artist_name);
+        artistTextView.setText(currentMusicData.getArtistName());
 
-        ImageView iconView = (ImageView) listItemView.findViewById(R.id.song_cover);
-        iconView.setImageResource(currentMusicData.getImageResourceId());
+        ImageView coverImgView = (ImageView) listItemView.findViewById(R.id.song_cover);
+        coverImgView.setImageResource(currentMusicData.getImageResourceId());
 
         return listItemView;
     }

@@ -4,4 +4,9 @@
     <string name="now_playing">NOW PLAYING</string>
     <string name="now_play_image">now_play_image</string>
     <string name="buy_this_song">BUY THIS SONG</string>
+    <string name="artist_introduction">Major Lazer is a Jamaican-American electronic dance music trio, which includes record producer Diplo, and DJs Walshy Fire and Ape Drums.
+        It was founded in 2008 by Diplo and Switch, with Switch leaving after three years in 2011.
+        He was then replaced by both Jillionaire and Walshy Fire. In June 2019, Jillionaire left the group and was replaced by Ape Drums.
+        Its music spans numerous genres, mixing reggae with dancehall, reggaeton, soca,house and moombahton.</string>
+    <string name="store_greeting">Welcome to URMusic Store</string>
 </resources>
