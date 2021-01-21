@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/major_lazer_logo" />
+        app:srcCompat="@drawable/lazer_logo" />
 
     <TextView
         android:id="@+id/textView"

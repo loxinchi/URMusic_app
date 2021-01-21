@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -137,11 +138,18 @@ public class NowPlayingActivity extends AppCompatActivity {
         });
 
         // Switch between Play & Pause icons
+        ImageView btnStartPause = findViewById(R.id.bt_start_pause);
+        final Boolean[] buttonFlag = {true};
         findViewById(R.id.bt_start_pause).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final ImageView imageView = (ImageView) findViewById(R.id.bt_start_pause);
-                imageView.setImageResource(R.drawable.pause_icon);
+                if (buttonFlag[0]){
+                    btnStartPause.setImageResource(R.drawable.pause_icon);
+                    buttonFlag[0] =false;
+            } else{
+                    btnStartPause.setImageResource(R.drawable.play_icon);
+                    buttonFlag[0] =true;
+                }
             }
         });
     }

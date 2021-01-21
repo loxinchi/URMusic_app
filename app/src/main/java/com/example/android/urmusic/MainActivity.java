@@ -19,11 +19,11 @@ public class MainActivity extends AppCompatActivity {
 
         // Create a list of musics
         ArrayList<MusicData> musics = new ArrayList<MusicData>();
-        musics.add(new MusicData("Run Up", "Major Lazer", R.drawable.major_lazer_art));
-        musics.add(new MusicData("Brasil Carnaval Mix", "Major Lazer", R.drawable.major_lazer_carnaval));
-        musics.add(new MusicData("Fever", "Major Lazer", R.drawable.major_lazer_fever));
-        musics.add(new MusicData("Powerful", "Major Lazer", R.drawable.major_lazer_powerful));
-        musics.add(new MusicData("Lean On", "Major Lazer", R.drawable.major_lazer_lean_on));
+        musics.add(new MusicData("Run Up", "Lazer", R.drawable.lazer_run_up));
+        musics.add(new MusicData("Brasil Carnaval Mix", "Lazer", R.drawable.lazer_carnaval));
+        musics.add(new MusicData("Fever", "Lazer", R.drawable.lazer_fever));
+        musics.add(new MusicData("Powerful", "Lazer", R.drawable.lazer_powerful));
+        musics.add(new MusicData("Lean On", "Lazer", R.drawable.lazer_lean_on));
 
         // Create an {@link MusicDataAdapter}, whose data source is a list of {@link MusicData}. The
         // adapter knows how to create list items for each item in the list.

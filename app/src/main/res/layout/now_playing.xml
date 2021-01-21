@@ -17,7 +17,7 @@
         android:layout_marginRight="16dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/now_playing"
-        android:textSize="46sp"
+        android:textSize="44sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -33,7 +33,7 @@
         android:layout_marginRight="16dp"
         android:contentDescription="@string/now_play_image"
         android:scaleType="centerInside"
-        android:src="@drawable/major_lazer_art"
+        android:src="@drawable/lazer_art"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/now_play" />
@@ -72,8 +72,8 @@
 
     <ImageView
         android:id="@+id/bt_start_pause"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
@@ -89,7 +89,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
