@@ -14,10 +14,6 @@ public class MusicStoreActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.music_store);
-
-        ActionBar actionBar = getSupportActionBar();
-        assert actionBar != null;
-        actionBar.setTitle("URMusic Store");
     }
 
     @Override
@@ -28,5 +24,4 @@ public class MusicStoreActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
 }

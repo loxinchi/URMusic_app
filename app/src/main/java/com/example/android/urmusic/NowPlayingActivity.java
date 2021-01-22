@@ -33,85 +33,19 @@ public class NowPlayingActivity extends AppCompatActivity {
         artist = findViewById(R.id.now_play_artist_textView);
         songName = findViewById(R.id.now_play_song_title);
 
-        if (position == 0) {
-            Intent intent = getIntent();
+        Intent intent = getIntent();
 
-            Bundle bundle = this.getIntent().getExtras();
-            int pic = bundle.getInt("coverPhoto");
-            String aTitle = intent.getStringExtra("artist");
-            String aDescription = intent.getStringExtra("songName");
+        Bundle bundle = this.getIntent().getExtras();
+        int pic = bundle.getInt("coverPhoto");
+        String aTitle = intent.getStringExtra("artist");
+        String aDescription = intent.getStringExtra("songName");
 
-            coverPhoto.setImageResource(pic);
-            artist.setText(aTitle);
-            songName.setText(aDescription);
+        coverPhoto.setImageResource(pic);
+        artist.setText(aTitle);
+        songName.setText(aDescription);
 
-            assert actionBar != null;
-            actionBar.setTitle(aTitle);
-        }
-
-        if (position == 1) {
-            Intent intent = getIntent();
-
-            Bundle bundle = this.getIntent().getExtras();
-            int pic = bundle.getInt("coverPhoto");
-            String aTitle = intent.getStringExtra("artist");
-            String aDescription = intent.getStringExtra("songName");
-
-            coverPhoto.setImageResource(pic);
-            artist.setText(aTitle);
-            songName.setText(aDescription);
-
-            assert actionBar != null;
-            actionBar.setTitle(aTitle);
-        }
-
-        if (position == 2) {
-            Intent intent = getIntent();
-
-            Bundle bundle = this.getIntent().getExtras();
-            int pic = bundle.getInt("coverPhoto");
-            String aTitle = intent.getStringExtra("artist");
-            String aDescription = intent.getStringExtra("songName");
-
-            coverPhoto.setImageResource(pic);
-            artist.setText(aTitle);
-            songName.setText(aDescription);
-
-            assert actionBar != null;
-            actionBar.setTitle(aTitle);
-        }
-
-        if (position == 3) {
-            Intent intent = getIntent();
-
-            Bundle bundle = this.getIntent().getExtras();
-            int pic = bundle.getInt("coverPhoto");
-            String aTitle = intent.getStringExtra("artist");
-            String aDescription = intent.getStringExtra("songName");
-
-            coverPhoto.setImageResource(pic);
-            artist.setText(aTitle);
-            songName.setText(aDescription);
-
-            assert actionBar != null;
-            actionBar.setTitle(aTitle);
-        }
-
-        if (position == 4) {
-            Intent intent = getIntent();
-
-            Bundle bundle = this.getIntent().getExtras();
-            int pic = bundle.getInt("coverPhoto");
-            String aTitle = intent.getStringExtra("artist");
-            String aDescription = intent.getStringExtra("songName");
-
-            coverPhoto.setImageResource(pic);
-            artist.setText(aTitle);
-            songName.setText(aDescription);
-
-            assert actionBar != null;
-            actionBar.setTitle(aTitle);
-        }
+        assert actionBar != null;
+        actionBar.setTitle(aTitle);
 
         // Intent to direct to artist introduction page
         @SuppressLint("CutPasteId") TextView artistTextView = (TextView) findViewById(R.id.now_play_artist_textView);
@@ -143,12 +77,12 @@ public class NowPlayingActivity extends AppCompatActivity {
         findViewById(R.id.bt_start_pause).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (buttonFlag[0]){
+                if (buttonFlag[0]) {
                     btnStartPause.setImageResource(R.drawable.pause_icon);
-                    buttonFlag[0] =false;
-            } else{
+                    buttonFlag[0] = false;
+                } else {
                     btnStartPause.setImageResource(R.drawable.play_icon);
-                    buttonFlag[0] =true;
+                    buttonFlag[0] = true;
                 }
             }
         });

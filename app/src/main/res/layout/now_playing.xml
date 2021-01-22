@@ -33,7 +33,7 @@
         android:layout_marginRight="16dp"
         android:contentDescription="@string/now_play_image"
         android:scaleType="centerInside"
-        android:src="@drawable/lazer_art"
+        android:src="@drawable/lazer_run_up"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/now_play" />

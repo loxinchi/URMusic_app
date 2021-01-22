@@ -41,72 +41,14 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                MusicData currentMusicData = musics.get(position);
 
-                if (position == 0) {
-                    Intent intent = new Intent(getApplicationContext(), NowPlayingActivity.class);
-                    // this intent put our 0 index image to another activity
-                    Bundle bundle = new Bundle();
-                    bundle.putInt("coverPhoto", musics.get(0).getImageResourceId());
-                    intent.putExtras(bundle);
-                    // now put title and description to another activity
-                    intent.putExtra("artist", musics.get(0).getArtistName());
-                    intent.putExtra("songName", musics.get(0).getSongName());
-                    // also put your position
-                    intent.putExtra("position", "" + 0);
-                    startActivity(intent);
-                }
-                if (position == 1) {
-                    Intent intent = new Intent(getApplicationContext(), NowPlayingActivity.class);
-                    // this intent put our 0 index image to another activity
-                    Bundle bundle = new Bundle();
-                    bundle.putInt("coverPhoto", musics.get(1).getImageResourceId());
-                    intent.putExtras(bundle);
-                    // now put title and description to another activity
-                    intent.putExtra("artist", musics.get(1).getArtistName());
-                    intent.putExtra("songName", musics.get(1).getSongName());
-                    // also put your position
-                    intent.putExtra("position", "" + 1);
-                    startActivity(intent);
-                }
-                if (position == 2) {
-                    Intent intent = new Intent(getApplicationContext(), NowPlayingActivity.class);
-                    // this intent put our 0 index image to another activity
-                    Bundle bundle = new Bundle();
-                    bundle.putInt("coverPhoto", musics.get(2).getImageResourceId());
-                    intent.putExtras(bundle);
-                    // now put title and description to another activity
-                    intent.putExtra("artist", musics.get(2).getArtistName());
-                    intent.putExtra("songName", musics.get(2).getSongName());
-                    // also put your position
-                    intent.putExtra("position", "" + 2);
-                    startActivity(intent);
-                }
-                if (position == 3) {
-                    Intent intent = new Intent(getApplicationContext(), NowPlayingActivity.class);
-                    // this intent put our 0 index image to another activity
-                    Bundle bundle = new Bundle();
-                    bundle.putInt("coverPhoto", musics.get(3).getImageResourceId());
-                    intent.putExtras(bundle);
-                    // now put title and description to another activity
-                    intent.putExtra("artist", musics.get(3).getArtistName());
-                    intent.putExtra("songName", musics.get(3).getSongName());
-                    // also put your position
-                    intent.putExtra("position", "" + 3);
-                    startActivity(intent);
-                }
-                if (position == 4) {
-                    Intent intent = new Intent(getApplicationContext(), NowPlayingActivity.class);
-                    // this intent put our 0 index image to another activity
-                    Bundle bundle = new Bundle();
-                    bundle.putInt("coverPhoto", musics.get(4).getImageResourceId());
-                    intent.putExtras(bundle);
-                    // now put title and description to another activity
-                    intent.putExtra("artist", musics.get(4).getArtistName());
-                    intent.putExtra("songName", musics.get(4).getSongName());
-                    // also put your position
-                    intent.putExtra("position", "" + 4);
-                    startActivity(intent);
-                }
+                Intent intent = new Intent(getApplicationContext(), NowPlayingActivity.class);
+
+                intent.putExtra("coverPhoto", currentMusicData.getImageResourceId());
+                intent.putExtra("artist", currentMusicData.getArtistName());
+                intent.putExtra("songName", currentMusicData.getSongName());
+                startActivity(intent);
             }
         });
     }

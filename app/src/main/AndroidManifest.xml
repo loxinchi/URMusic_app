@@ -14,9 +14,11 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ArtistIntroActivity"
+            android:label="Lazer"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MusicStoreActivity"
+            android:label="URMusic Store"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
