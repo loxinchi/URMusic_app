@@ -2,6 +2,8 @@
 
 This is a Music UI application, doesn’t support music playing made for Udacity Android Basics by Google Nanodegree.
 
+![URMUISC](https://user-images.githubusercontent.com/76967954/107675208-249c8b80-6c98-11eb-91c7-671e82f9012c.gif)
+
 **This application includes 4 pages.**
 1. MainActivity - play list<br/>
 2. NowPlayActivity - Now playing<br/>
