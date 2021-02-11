@@ -1,7 +1,6 @@
-# URMusic_app
+# Udacity Project 4 - URMusic Application 
 
-**This app is a Music application for UI desgin only.**
-<br/>
+This is a Music UI application, doesn’t support music playing made for Udacity Android Basics by Google Nanodegree.
 
 **This application includes 4 pages.**
 1. MainActivity - play list<br/>
